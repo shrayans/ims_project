@@ -1,0 +1,290 @@
+<head>
+
+		<link rel="stylesheet" href="form.css">
+		<script src="form.js"></script>
+		<script language="Javascript" src="jquery.js"></script>
+		<script type="text/JavaScript" src='state.js'></script>
+
+</head>
+
+
+
+
+<div class="form">
+	<h2> Registration Form
+	<img src="https://serc.iiit.ac.in/static/images/iiit.png" alt="logo" height="70" width="90" align="right">
+	</h2>
+	<p>All fields are mandatory</p>
+
+
+<br>
+
+
+	<input id="one" type="radio" name="stage" checked="checked" />
+	<input id="two" type="radio" name="stage" />
+	<input id="three" type="radio" name="stage" />
+	<input id="four" type="radio" name="stage" />
+
+	<div class="stages">
+		<label for="one">1</label>
+		<label for="two">2</label>
+		<label for="three">3</label>
+		<label for="four">4</label>
+	</div>
+
+
+	<span class="progress"><span></span></span>
+
+	<div class="panels">
+		<div data-panel="one">
+
+      <h3>Personal Details</h3>
+
+			First Name:<input type="text" id="firstName" name="firstName" placeholder="First Name" />
+
+			<br><br>
+			Last Name:
+			<input type="text" id="lastName" name="lastName" placeholder="Last Name" />
+
+      <br><br>
+			Full Name:
+      <input type="text" id="firstName" name="firstName" placeholder="(As per 10th std certificate)" />
+
+			<br><br>
+			Date of Birth:
+			<input type="date" id="birthDate" name="birthDate" placeholder="Date of Birth" />
+
+      <br><br>
+      Gender:
+      <select name="Gender">
+        <option value="select">Select..</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="transgender">Transgender</option>
+      </select>
+
+    <br>
+    <br>
+      Do you have any Disability:
+      <select name="">
+        <option value="select">Select..</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <br>
+      <br>
+			Landline:
+      <input type="number" id="landline" name="landline" placeholder="Landline(with STD code without spaces)" />
+
+      <br><br>
+			Father Name:
+      <input type="text" id="fathername" name="fathername" placeholder="Father's Name" />
+
+      <br><br>
+			Mother Name:
+      <input type="text" id="mothername" name="mothername" placeholder="Mother's Name" />
+
+      <br><br>
+			Mobile Number
+      <input type="number" id="mobilenumber" name="mobilenumber" placeholder="Enter mobile number" />
+			<br>
+			<!-- <a href="#" class="button success round next-tab right">Next</a> -->
+
+		</div>
+
+
+
+		<div data-panel="two">
+		<h3>Details</h3>
+		<br>
+		Highest qualification of father:
+		<select name="Qualification">
+			<option value="select">Select..</option>
+			<option value="below 10th ">Below 10th</option>
+			<option value="10th pass">10th Pass</option>
+			<option value="12th pass">12th Pass</option>
+			<option value="vocational education">Vocational Education</option>
+			<option value="diploma">Diploma</option>
+			<option value="3 year degree">3 year degree</option>
+			<option value="professional degree">Professional Degree</option>
+			<option value="masters degree in any subject">Maters Degree in any subject</option>
+			<option value="PhD in any subject">PhD in any subject</option>
+		</select>
+
+			<br><br>
+			Current occupation of father:
+			<select name="Occupation">
+				<option value="select">Select..</option>
+				<option value="self employed">Self Employed</option>
+				<option value="own business">Own Business</option>
+				<option value="homemaker">Homemaker</option>
+				<option value="farmer">Farmer</option>
+				<option value="private sector employee">Private Sector Employee</option>
+				<option value="public sector">Public sector</option>
+				<option value="government employee">Government Employee</option>
+				<option value="other">Other</option>
+				<option value="deceased">Deceased</option>
+			</select>
+
+			<br><br>
+			Highest qualification of mother:
+			<select name="Qualification">
+				<option value="select">Select..</option>
+				<option value="below 10th ">Below 10th</option>
+				<option value="10th pass">10th Pass</option>
+				<option value="12th pass">12th Pass</option>
+				<option value="vocational education">Vocational Education</option>
+				<option value="diploma">Diploma</option>
+				<option value="3 year degree">3 year degree</option>
+				<option value="professional degree">Professional Degree</option>
+				<option value="masters degree in any subject">Maters Degree in any subject</option>
+				<option value="PhD in any subject">PhD in any subject</option>
+			</select>
+
+				<br><br>
+				Current occupation of mother:
+				<select name="Occupation">
+					<option value="select">Select..</option>
+					<option value="self employed">Self Employed</option>
+					<option value="own business">Own Business</option>
+					<option value="homemaker">Homemaker</option>
+					<option value="farmer">Farmer</option>
+					<option value="private sector employee">Private Sector Employee</option>
+					<option value="public sector">Public sector</option>
+					<option value="government employee">Government Employee</option>
+					<option value="other">Other</option>
+					<option value="deceased">Deceased</option>
+				</select>
+
+				<br><br>
+				Mother Tongue:
+				<select name="Mother Tongue">
+					<option value="select">Select..</option>
+					<option value="hindi">Hindi</option>
+					<option value="english">English</option>
+					<option value="bengali">Bengali</option>
+					<option value="marathi">Marathi</option>
+					<option value="telugu">Telugu</option>
+					<option value="tamil">Tamil</option>
+					<option value="gujarati">Gujarati</option>
+					<option value="urdu">Urdu</option>
+					<option value="odia">Odia</option>
+					<option value="malayalam">Malayalam</option>
+					<option value="punjabi">Punjabi</option>
+					<option value="sanskrit">Sanskrit</option>
+					<option value="other than above">Other than Above</option>
+				</select>
+
+				<br><br>
+				<h3>Number of Siblings</h3>
+				Number of Brothers:
+				<input type="number" id="brother" name="brother" placeholder="Number of Brothers">
+
+				<br><br>
+				Number of Sisters:
+				<input type="number" id="sister" name="sister" placeholder="Number of Sisters">
+				<br>
+
+				</div>
+
+
+
+			<div data-panel="three">
+				<h3>Current Residential Address</h3>
+
+
+				Address Line 1:<input type="text" id="ad" name="address" placeholder="House no/Flat no" />
+
+				<br><br>
+				Address Line 2:<input type="text" id="add" name="address2" placeholder="Street " />
+
+				<br><br>
+				Landmark:<input type="text" id="lm" name="landmark" placeholder="Nearest Landmark" />
+
+				<br><br>
+				Country:
+				<select name="country">
+				<option value="India">India</option>
+				</select>
+
+				<br><br>
+				State:
+       	<select id="listBox" onchange='selct_district(this.value)'></select>
+
+				<!-- <select name="states">
+				<option value="volvo">select</option>
+				<option value="saab">Saab</option>
+				<option value="opel">Opel</option>
+				<option value="audi">Audi</option>
+				</select> -->
+
+				<br><br>
+				District:
+				<select id='secondlist'></select>
+				<!-- <select name="district">
+				<option value="volvo">select</option>
+				<option value="saab">Saab</option>
+				<option value="opel">Opel</option>
+				<option value="audi">Audi</option>
+				</select> -->
+
+
+				<br><br>
+				City:
+				<input type="text" id="city" name="city" placeholder="Eg:Hyderabad" />
+
+				<br><br>
+				Pincode:
+				<input type="number" id="pin" name="pincode" placeholder="Pincode" />
+
+			</div>
+
+
+			<div data-panel="four">
+      <h3>Login Detalis</h3>
+
+			<p>Your Email Id shall become your User Id upon verification,
+			so please enter valid Email Id only</p>
+
+			Email:<input type="email" id="Email" name="Email" placeholder="Email" />
+
+			<br><br>
+			Confirm Email:<input type="email" id="Retype Email" name="Retype Email" placeholder="Retype Email" />
+
+			<br><br>
+			Password(Minimum six characters, use one numeric character and one upper case)
+			Password:<input type="password" id="ad" name="Password" placeholder="Password" />
+
+			<br><br>
+			Confirm Password:<input type="password" id="ad" name="Retype Password" placeholder="Retype Password" />
+
+			<br><br>
+			How did you come to know about IIIT, Hyderabad?
+			<select name="Social Media">
+				<option value="select">Select..</option>
+				<option value="Newspaper Advertisement">Newspaper Advertisement</option>
+				<option value="Magazines">Magazines</option>
+				<option value="Friends/Relatives">Friends/Relatives</option>
+				<option value="IIITH Home Page">IIITH Home Page</option>
+				<option value="Internet">Internet</option>
+				<option value="Facebook">Facebook</option>
+				<option value="others">Others</option>
+			</select>
+			<br>
+
+</div>
+
+<button class="gg" id="next"  ><label for="2"> Next </label></button>
+<button id="myButton" class="float-left submit-button" >Home</button>
+
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "https://www.youtube.com/";
+    };
+</script>
+
+
+
+</div>
