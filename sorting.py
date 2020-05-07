@@ -186,9 +186,10 @@ r = requests.get(URL)
 soup=bs4.BeautifulSoup(r.text,'html5lib')
 
 page = soup.getText()
-#print(page)
-
-json_object = json.loads(page)
+#print(page,type(page))
+page=page.split(')')
+print(page)
+json_object = json.loads(page[1])
 
 c=0
 for items in json_object:
