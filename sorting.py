@@ -22,10 +22,7 @@ for i in range(0,len(list)):
     
     temp_df=pd.read_csv( 'csv_files/'+list[i] )       
     l.append(temp_df)
-#     print(list[i],temp_df.shape)
-    
-#    df.append(temp_df)
-# print(len(l))
+
 
 df=pd.concat(l)
 
@@ -188,7 +185,7 @@ soup=bs4.BeautifulSoup(r.text,'html5lib')
 page = soup.getText()
 #print(page,type(page))
 page=page.split(')')
-print(page)
+#print(page)
 json_object = json.loads(page[1])
 
 c=0
@@ -223,7 +220,7 @@ for lst in valid_id_details:
 			}
 	i+=1
 	final_dict[lst[3]]=details
-print(final_dict)
+#print(final_dict)
 
 ini_string = json.dumps(final_dict,indent = 4)
 
